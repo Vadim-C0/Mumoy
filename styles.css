@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "RoboticFont";
+    src: url("fonts/RobotoSerif.ttf");
+}
+
+:root {
+    --color-dark: #000;
+    --color-light: #fff;
+    --color-orange: #f08f11;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+#navbar {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+#navbar img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--color-light);
+    border-radius: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+a:hover {
+    color: var(--color-orange);
+}
+
+.image-dreams {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    border: 2px solid var(--color-light);
+    border-radius: 50%;
+    animation: roll 3s linear infinite;
+}
+
+.content {
+    text-align: center;
+    font-family: "RoboticFont", sans-serif;
+    color: var(--color-light);
+}
+
+.slogan_cta, .speech_cta, .about {
+    margin-bottom: 100px;
+    line-height: 45px;
+}
+
+.btn_cta {
+    margin-top: 75px;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 50px;
+    font-family: "RoboticFont", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_cta a {
+  color: var(--color-light);  
+}
+
+.btn_cta:hover {
+    background: var(--color-orange);
+    animation: pulse 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.image-introduction {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.social-media img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 100px 50px;
+}
+
+.map {
+    margin-top: 25px;
+    border-radius: 5%;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.image-arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 1350px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 25%;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1.1);}
+}
+
+@media screen and (max-width:828px) {
+
+    #navbar ul { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    }
+
+    .slogan_cta, .speech_cta, .about {
+    font-size: 0.75rem;
+    }
+
+    .social-media img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 100px 50px;
+    }
+    
+    .map {
+    width: 350px;
+    height: 350px;
+    margin-top: 25px;
+    border-radius: 5%;
+    }
+}
