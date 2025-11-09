@@ -147,7 +147,7 @@ a:hover {
 @media screen and (max-width:828px) {
 
     html, body {
-    overflow:hidden;
+    overflow: scroll;
     }
     
     #navbar ul { 
@@ -176,3 +176,4 @@ a:hover {
     border-radius: 5%;
     }
 }
+
