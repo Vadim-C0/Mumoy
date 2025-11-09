@@ -22,7 +22,7 @@ html {
 body {
     background-image: url(images/background.jpg);
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 #navbar {
@@ -173,3 +173,4 @@ a:hover {
     border-radius: 5%;
     }
 }
+
