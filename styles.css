@@ -146,10 +146,6 @@ a:hover {
 
 @media screen and (max-width:828px) {
     
-    html, body {
-    overscroll-behavior: none;
-    }
-
     #navbar ul { 
     display: flex;
     flex-direction: column;
