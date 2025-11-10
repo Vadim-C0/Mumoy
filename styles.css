@@ -54,6 +54,7 @@ html, body {
 
 #navbar ul li a {
     font-family: "HeadFont", sans-serif;
+    font-weight: bold;
 }
 
 a {
