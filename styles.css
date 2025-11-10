@@ -3,6 +3,11 @@
     src: url("fonts/RobotoSerif.ttf");
 }
 
+@font-face {
+    font-family: "HeadFont";
+    src: url("fonts/StackSansHeadline.ttf");
+}
+
 :root {
     --color-dark: #000;
     --color-light: #fff;
@@ -29,7 +34,6 @@ html, body {
 }
 
 #navbar {
-    font-size: 1.25rem;
     margin-top: 10px;
     margin-bottom: 100px;
 }
@@ -46,6 +50,10 @@ html, body {
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
+}
+
+#navbar ul li a {
+    font-family: "HeadFont", sans-serif;
 }
 
 a {
