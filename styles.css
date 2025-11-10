@@ -159,6 +159,10 @@ a:hover {
 
 @media screen and (max-width:828px) {
 
+    #navbar {
+    margin-bottom: 40px;
+    }
+    
     #navbar ul { 
     display: flex;
     flex-direction: column;
