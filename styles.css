@@ -170,6 +170,11 @@ a:hover {
     list-style-type: none;
     }
 
+    .image-dreams {
+    width:250px;
+    height:250px;
+    }
+    
     .slogan_cta, .speech_cta, .about {
     font-size: 0.75rem;
     }
