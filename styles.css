@@ -46,7 +46,18 @@ body::before {
 }
 
 #navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 90px;
   margin: 10px 0 60px;
+}
+
+#navbar .logo-link {
+  position: absolute;
+  left: 20px;
+  top: 5px;
 }
 
 #navbar ul {
@@ -73,6 +84,51 @@ body::before {
   height: 50px;
   border: 2px solid var(--color-light);
   border-radius: 10px;
+}
+
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--color-light);
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+#nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+#nav-links ul li a {
+  font-family: "HeadFont", sans-serif;
+  font-weight: bold;
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+#nav-links ul li a:hover {
+  color: var(--color-orange);
+}
+
+#nav-links ul li.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+#nav-links ul li.social-icons img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--color-light);
+  border-radius: 50%;
 }
 
 .social-icons {
@@ -206,5 +262,36 @@ footer {
 
   .map {
     height: 300px;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    padding-top: 20px;
+    z-index: 9999;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #nav-links ul li.social-icons {
+    justify-content: center;
   }
 }
