@@ -14,21 +14,24 @@
   <body>
     <header>
       <nav id="navbar">
-        <ul>
-          <li>
-            <a href="#">
-              <figure>
-                <img src="images/logo.jpg" alt="Mumoy Logo" />
-              </figure>
-            </a>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#book-demo">Book a Demo</a></li>
-          <li><a href="#learn-more">Learn More</a></li>
-          <li><a href="#find-us">Find Us</a></li>
-          <li>
-            <figure class="social-icons">
+        <a href="#" class="logo-link">
+          <figure>
+            <img src="images/logo.jpg" alt="Mumoy Logo" />
+          </figure>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button id="hamburger" aria-label="Toggle menu">☰</button>
+
+        <!-- Navigation Links -->
+        <div id="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#book-demo">Book a Demo</a></li>
+            <li><a href="#learn-more">Learn More</a></li>
+            <li><a href="#find-us">Find Us</a></li>
+            <li class="social-icons">
               <a
                 href="https://www.linkedin.com/in/vadim-gladyshev-591103298"
                 target="_blank"
@@ -50,9 +53,9 @@
               >
                 <img src="images/instagram_photo.png" alt="Instagram logo" />
               </a>
-            </figure>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
