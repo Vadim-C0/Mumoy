@@ -255,6 +255,10 @@ footer {
     height: 50px;
   }
 
+  .slogan-cta {
+    margin-top: 100px;
+  }
+  
   .btn-cta {
     padding: 15px 30px;
     font-size: 1rem;
