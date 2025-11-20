@@ -299,3 +299,30 @@ footer {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 973px) { 
+  #hamburger {
+    display: block; 
+  }
+
+  #nav-links {
+    display: none; 
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    background: rgba(0,0,0,0.95);
+    padding-top: 20px;
+    z-index: 9999;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .slogan-cta {
+    margin-top: 100px;
+  }
+}
