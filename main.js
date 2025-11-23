@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // CTA buttons scroll to demo section
   document.querySelectorAll(".btn-cta").forEach((button) => {
     button.addEventListener("click", () => {
-      window.location.href = "#book-demo";
+      window.open("https://mumoy-form.onrender.com/", "_blank", "noopener,noreferrer");
     });
   });
 });
